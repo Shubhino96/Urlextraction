@@ -15,6 +15,8 @@ public class Urlext {
 			Elements images = doc.select("img[src~=(?i)\\.(png|jpe?g|gif)]");
 			for(Element image:images)
 			{
+				if(i==20)
+					break;
 				urls[i]=image.attr("src");
 				i++;
 			}
